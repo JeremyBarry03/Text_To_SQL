@@ -1,4 +1,6 @@
-/.env
+backend/.env
+frontend/.env
+
 /.env.local
 /node_modules
 /dist

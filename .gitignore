@@ -1,0 +1,16 @@
+/.env
+/.env.local
+/node_modules
+/dist
+
+# App packages
+/server/node_modules
+/web/node_modules
+/server/.env*
+/web/.env*
+/web/dist
+
+# Logs and OS files
+*.log
+*.sqlite
+.DS_Store

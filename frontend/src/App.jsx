@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
-const sampleQuestion = "Show the 15 most recent orders with customer names and totals.";
-
 function App() {
   const [question, setQuestion] = useState("");
   const [rows, setRows] = useState([]);
@@ -87,9 +85,6 @@ function App() {
         <section className="panel input-panel">
           <div className="panel-header">
             <h2>Ask a question</h2>
-            <button type="button" className="ghost" onClick={() => setQuestion(sampleQuestion)}>
-              Use sample
-            </button>
           </div>
           <form onSubmit={handleAsk} className="question-form">
             <label className="label" htmlFor="question">

@@ -3,10 +3,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import OpenAI from "openai";
 import pg from "pg/lib/index.js";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const { Pool } = pg;
 
-dotenv.config();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// Load envs from repo root (.env) so backend works when root file is shared.
+dotenv.config({ path: path.resolve(__dirname, "..", "..", ".env") });
 
 const PORT = process.env.PORT || 4000;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;

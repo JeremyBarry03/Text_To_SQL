@@ -1,13 +1,4 @@
-/.env
-/.env.local
-/backend/.env*
-/frontend/.env*
-/backend/.env*
-/frontend/.env*
-/server/.env*
-/web/.env*
-**/.env*
-**/.env.local
+.env
 /node_modules
 /dist
 
